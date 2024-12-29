@@ -1,5 +1,7 @@
 # Multigame Template
 
+![multigame](https://github.com/user-attachments/assets/0cc93331-269d-4076-99ae-b07384e97848)
+
 A modern, feature-rich starter template for building multiplayer games using Next.js 13+. This template provides a solid foundation for creating various types of multiplayer games with real-time capabilities.
 
 ## 🚀 Features
