@@ -1,16 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import Hangman from './games/Hangman'
 import TicTacToe from './games/TicTacToe'
 import Checkers from './games/Checkers'
 import Snake from './games/Snake'
 import Blackjack from './games/Blackjack'
 import Minesweeper from './games/Minesweeper'
-import { GavelIcon as Gallows, Circle, Square, ChevronLeft, Disc, HeartIcon as Hearts, Dices, Grid } from 'lucide-react'
+import { Circle, Square, ChevronLeft, Disc, HeartIcon as Hearts, Grid } from 'lucide-react'
 
 const games = [
-  { id: 'hangman', name: 'Hangman', icon: Gallows },
   { id: 'tictactoe', name: 'Tic-Tac-Toe', icon: Circle },
   { id: 'checkers', name: 'Checkers', icon: Square },
   { id: 'snake', name: 'Snake', icon: Disc },
@@ -23,8 +21,6 @@ export default function GameSelector() {
 
   const renderGame = () => {
     switch (selectedGame) {
-      case 'hangman':
-        return <Hangman />
       case 'tictactoe':
         return <TicTacToe />
       case 'checkers':
